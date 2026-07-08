@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>光影导航 · 免费正版影视，搜片名一步直达</title>
+  <meta name="description" content="输入电影/电视剧/纪录片/动漫片名，一步直达各免费正版平台的该片搜索结果，无需跳转主页再手动查找。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1 class="logo">🎬 光影导航</h1>
+      <p class="tagline">免费 · 正版 · 合法 —— 搜片名，一步直达，不用再去主页慢慢找</p>
+      <div class="search-box">
+        <input id="search" type="text" placeholder="输入片名，如：逃学威龙、千与千寻…" autocomplete="off" />
+        <span class="search-icon">🔍</span>
+      </div>
+      <div class="examples" id="examples"></div>
+      <p class="disclaimer">本站仅聚合<b>官方免费 / 免费专区 / 公版</b>资源，不存储、不内嵌任何片源；点击结果将直达对应平台的该片搜索页。</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="filters">
+      <div class="filter-group" id="catFilter">
+        <span class="filter-label">内容类型</span>
+        <div class="chips" id="catChips"></div>
+      </div>
+      <div class="filter-group" id="resFilter">
+        <span class="filter-label">最高分辨率</span>
+        <div class="chips" id="resChips"></div>
+      </div>
+    </section>
+
+    <div class="stats" id="stats"></div>
+
+    <!-- 搜索模式：列出各平台「看这部片」的直达入口 -->
+    <section class="grid" id="grid"></section>
+
+    <p class="empty" id="empty" hidden>没有匹配的平台，换个关键词试试～</p>
+  </main>
+
+  <footer class="footer">
+    <p>光影导航 · 纯静态导航站 ｜ 所有内容版权归原平台所有 ｜ 支持正版，从免费开始</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
